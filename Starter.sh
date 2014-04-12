@@ -6,8 +6,8 @@ echo "--- Updating packages list ---"
 sudo apt-get update
 
 echo "--- MySQL ---"
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
+# sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
+# sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
 
 echo "--- Installiing some requirments ---"
 sudo apt-get install -y vim curl python-software-properties
@@ -56,15 +56,13 @@ tar -xvf node-v0.10.24.tar.gz
 cd node-v0.10.24 && ./configure && make && sudo make install
 
 echo "--- Lets install RVM & RAILS ---"
-sudo apt-get --force-yes install build-essential openssl libreadline6 libreadline6-dev curl git-core \
+sudo apt-get -y install build-essential openssl libreadline6 libreadline6-dev curl git-core \
 zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev \
 libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison && curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled 
-&& echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile 
-&& source ~/.bash_profile
-&& rvm install 2.0.0-p353
-&& rvm use --default 2.0.0-p353
-&& ruby -v
-&& gem install rails --pre
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile 
+source ~/.rvm/scripts/rvm
+type rvm | head -n 1
+rvm install 2.0.0-p353 && rvm use --default 2.0.0-p353 && ruby -v && gem install rails --pre
 
 
 echo "--- Lets install SublimeText ---"
