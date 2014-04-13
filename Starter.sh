@@ -64,9 +64,18 @@ source ~/.rvm/scripts/rvm
 type rvm | head -n 1
 rvm install 2.0.0-p353 && rvm use --default 2.0.0-p353 && ruby -v && gem install rails --pre
 
-echo "--- Installing Gulp and some dependencies ---"
-
-
+echo "--- Installing GulpJS and some dependencies ---"
+sudo gem install sass
+sudo npm install -g coffee-script
+sudo npm install gulp
+sudo npm install gulp-minify-css
+sudo npm install gulp-autoprefixer
+sudo npm install gulp-notify
+sudo npm install gulp-ruby-sass 
+sudo npm install gulp-coffee
+sudo npm install gulp-concat
+sudo npm install gulp-uglify
+sudo npm install gulp-imagemin
 
 echo "--- Lets install SublimeText ---"
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
