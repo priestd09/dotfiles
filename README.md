@@ -1,5 +1,4 @@
 ##Ubuntu & Mint Development Starter Script
-=========================
 
 PHP5
 
