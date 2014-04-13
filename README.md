@@ -1,4 +1,15 @@
-UbuntuDevDesktopInstaller
+Ubuntu & Mint Development Starter Script
 =========================
 
-All in one installler script for fresh ubuntu &amp; mint installation.
+PHP5
+MYSQL
+APACHE
+COMPOSER
+LARAVEL
+NODEJS
+RVM
+RAILS
+SUBLIMETEXT
+VIRTUALBOX
+DROPBOX
+VLC
