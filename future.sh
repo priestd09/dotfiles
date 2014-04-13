@@ -1,6 +1,6 @@
 sudo gem install sass
 
-sudo npm install -g coffee-script
+npm install -g coffee-script
 npm install gulp
 npm install gulp-minify-css
 npm install gulp-autoprefixer
