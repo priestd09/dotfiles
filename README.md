@@ -20,6 +20,14 @@ SUBLIMETEXT
 
 VIRTUALBOX
 
+VAGRANT 
+
 DROPBOX
 
 VLC
+
+===========
+
+Soon™ 
+
+GulpJS
