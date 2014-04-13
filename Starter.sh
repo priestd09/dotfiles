@@ -64,6 +64,9 @@ source ~/.rvm/scripts/rvm
 type rvm | head -n 1
 rvm install 2.0.0-p353 && rvm use --default 2.0.0-p353 && ruby -v && gem install rails --pre
 
+echo "--- Installing Gulp and some dependencies ---"
+
+
 
 echo "--- Lets install SublimeText ---"
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
