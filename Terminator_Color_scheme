@@ -4,11 +4,12 @@ config file located ~/.config/terminator/config
 [keybindings]
 [profiles]
   [[default]]
-    use_system_font = False
-    font = Ubuntu Mono 16
+    scrollbar_position = hidden
     background_image = None
-    background_color = "#2b2b2b"
+    use_system_font = False
     show_titlebar = False
+    font = Ubuntu Mono 16
+    background_color = "#2b2b2b"
 [layouts]
   [[default]]
     [[[child1]]]
