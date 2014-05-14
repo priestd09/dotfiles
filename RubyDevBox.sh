@@ -58,7 +58,8 @@ echo "QT YUKLENIYOR"
 sudo apt-get install -y qt4-qmake
 sudo apt-get install -y libqtwebkit-dev
 
+cd /vagrant
 git clone https://github.com/bulutfon/bulutfon.git
 
-cd bulutfon
+cd /vagrant/bulutfon
 bundle
