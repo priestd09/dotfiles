@@ -5,7 +5,7 @@ echo "Lutfen git kullanici adinizi giriniz (orn Hakan ERSU) [ENTER]:"
 read kullanici
 
 sudo apt-get update
-sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties
+sudo apt-get -y install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties
 
 echo "###################### GIT HESABINIZ YAPILANDIRILIYOR ########################"
 git config --global color.ui true
