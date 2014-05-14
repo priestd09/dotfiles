@@ -1,4 +1,5 @@
 #!/bin/bash 
+echo "NodeJS kurulumundan gecildikten sonra kahvenizi alip 30-40dk mola verseniz yerinde olacaktir."
 echo "Lutfen git email adresinizi giriniz (orn hakanersu@cimeyl.com)[ENTER]:"
 read email
 echo "Lutfen git kullanici adinizi giriniz (orn Hakan ERSU) [ENTER]:"
@@ -40,7 +41,7 @@ sudo make install
 ruby -v
 
 echo "RAILS KURULUMU"
-gem install rails
+sudo gem install rails
 
 echo "POSTGRESQL KURULUMU"
 sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
@@ -50,7 +51,7 @@ sudo apt-get install -y postgresql-common
 sudo apt-get install -y postgresql-9.3 libpq-dev
 
 echo "MYSQL KURULUMU"
-sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+sudo apt-get install -y mysql-server mysql-client libmysqlclient-dev
 
 
 echo "QT YUKLENIYOR"
