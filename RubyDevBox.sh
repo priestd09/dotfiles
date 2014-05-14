@@ -51,7 +51,7 @@ sudo apt-get install -y postgresql-common
 sudo apt-get install -y postgresql-9.3 libpq-dev
 
 echo "MYSQL KURULUMU"
-sudo apt-get install -y mysql-server mysql-client libmysqlclient-dev
+#sudo apt-get install -y mysql-server mysql-client libmysqlclient-dev
 
 
 echo "QT YUKLENIYOR"
