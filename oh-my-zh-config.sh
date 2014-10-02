@@ -34,3 +34,8 @@ function mkd() {
 function zombie() {
 	ps aux | awk '{if ($8=="Z") { print $2 }}'
 }
+
+source $HOME/.nvm/nvm.sh
+
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
