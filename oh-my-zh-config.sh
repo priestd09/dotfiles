@@ -1,14 +1,19 @@
-plugins=(gitfast debian last-working-dir urltools ssh-agent colored-man bower nvm rvm ruby gem node npm themes zsh-syntax-highlighting vagrant)
-
+export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="robbyrussell"
+plugins=(git)
+export PATH="/home/xuma/.rvm/gems/ruby-2.1.3/bin:/home/xuma/.rvm/gems/ruby-2.1.3@global/bin:/home/xuma/.rvm/rubies/ruby-2.1.3/bin:/home/xuma/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+source $ZSH/oh-my-zsh.sh
+alias homestead="/home/xuma/.composer/vendor/bin/homestead"
+alias vu="cd ~/Application/Homestead/ && vagrant up && cd -"
+alias vm="cd ~/Application/Homestead/ && vagrant ssh && cd -"
+alias vs="cd ~/Application/Homestead/ && vagrant halt && cd -"
+alias vr="cd ~/Application/Homestead/ && vagrant reload && cd -"
 alias ls='ls -X -h --group-directories-first --color'
 alias gedit='subl'
 alias g='git'
-alias v='vagrant'
-
 alias build-source='./configure && make && sudo make install'
 alias untar='tar -zxvf'
 alias untarxz='tar -xJf'
-
 alias clean='sudo apt-get clean'
 alias purge='sudo apt-get purge'
 alias search='sudo apt-get search'
@@ -17,16 +22,10 @@ alias remove='sudo apt-get remove'
 alias upgrade='sudo apt-get upgrade'
 alias install='sudo apt-get install'
 alias autoremove='sudo apt-get autoremove'
-
 alias dist-upgrade='sudo apt-get dist-upgrade'
-alias vu='cd  ~/Work/Homestead && vagrant up && cd -'
-alias vm='ssh vagrant@127.0.0.1 -p 2222'
-alias blog='~/Work/Projects/Blog'
 alias c='clear'
-
-# Sudo alias fix
 alias sudo='sudo '
-
+alias laravel5='composer create-project laravel/laravel .  dev-develop --prefer-dist'
 function mkd() {
 	mkdir -p "$@" && cd "$@"
 }
@@ -34,8 +33,3 @@ function mkd() {
 function zombie() {
 	ps aux | awk '{if ($8=="Z") { print $2 }}'
 }
-
-source $HOME/.nvm/nvm.sh
-
-export PATH=/usr/local/share/npm/bin:$PATH
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
