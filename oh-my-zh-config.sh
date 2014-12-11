@@ -31,3 +31,5 @@ function mkd() {
 function zombie() {
 	ps aux | awk '{if ($8=="Z") { print $2 }}'
 }
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
