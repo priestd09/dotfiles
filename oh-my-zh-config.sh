@@ -3,11 +3,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 export PATH="/home/xuma/.rvm/gems/ruby-2.1.3/bin:/home/xuma/.rvm/gems/ruby-2.1.3@global/bin:/home/xuma/.rvm/rubies/ruby-2.1.3/bin:/home/xuma/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 source $ZSH/oh-my-zsh.sh
-alias homestead="/home/xuma/.composer/vendor/bin/homestead"
-alias vu="cd ~/Application/Homestead/ && vagrant up && cd -"
-alias vm="cd ~/Application/Homestead/ && vagrant ssh && cd -"
-alias vs="cd ~/Application/Homestead/ && vagrant halt && cd -"
-alias vr="cd ~/Application/Homestead/ && vagrant reload && cd -"
+alias vu="homestead up"
+alias vm="homestead ssh"
+alias vs="homestead suspend"
 alias ls='ls -X -h --group-directories-first --color'
 alias gedit='subl'
 alias g='git'
