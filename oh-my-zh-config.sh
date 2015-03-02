@@ -34,6 +34,8 @@ function c(){
 function serve(){
 	php -S localhost:"$@"
 }
+
+#dont forget to set :  git config --global push.default matching
 function gitall()
 {
 	git add -A 
