@@ -10,7 +10,6 @@ alias g='git'
 alias a='git add .'
 alias p:o='git push -u origin master'
 alias p:s='git push -u origin stage'
-alias gitall='git add -A&&git commit -m $1&&git push'
 alias s='git status'
 alias build-source='./configure && make && sudo make install'
 alias untar='tar -zxvf'
@@ -34,6 +33,12 @@ function c(){
 
 function serve(){
 	php -S localhost:"$@"
+}
+function gitall()
+{
+	git add -A 
+	git commit -m "$@"
+	git push
 }
 
 function mkd() {
