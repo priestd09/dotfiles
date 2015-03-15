@@ -50,3 +50,8 @@ function mkd() {
 function zombie() {
 	ps aux | awk '{if ($8=="Z") { print $2 }}'
 }
+
+# Symfony create bundle
+function s:cb(){
+	php app/console generate:bundle --namespace=$@ --format=yml
+}
