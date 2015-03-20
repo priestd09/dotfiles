@@ -23,7 +23,7 @@ alias upgrade='sudo apt-get upgrade'
 alias install='sudo apt-get install'
 alias autoremove='sudo apt-get autoremove'
 alias dist-upgrade='sudo apt-get dist-upgrade'
-git-discard='git clean -df; git checkout -- .'
+alias git-discard='git clean -df; git checkout -- .'
 alias sudo='sudo '
 alias laravel5='composer create-project laravel/laravel .  dev-develop --prefer-dist'
 
