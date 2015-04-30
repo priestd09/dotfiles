@@ -25,6 +25,7 @@ alias autoremove='sudo apt-get autoremove'
 alias dist-upgrade='sudo apt-get dist-upgrade'
 alias git-discard='git clean -df; git checkout -- .'
 alias sudo='sudo '
+alias art='php artisan'
 alias laravel5='composer create-project laravel/laravel .  dev-develop --prefer-dist'
 
 function c(){
