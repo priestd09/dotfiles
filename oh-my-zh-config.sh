@@ -28,6 +28,12 @@ alias sudo='sudo '
 alias art='php artisan'
 alias laravel5='composer create-project laravel/laravel .  dev-develop --prefer-dist'
 
+#sudo apt-get install youtube-dl
+function ydl()
+{
+	youtube-dl --extract-audio --audio-format mp3 "$@"
+}
+
 function c(){
 	git commit -m "$@"
 }
