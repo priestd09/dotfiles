@@ -31,7 +31,7 @@ alias laravel5='composer create-project laravel/laravel .  dev-develop --prefer-
 #sudo apt-get install youtube-dl
 function ydl()
 {
-	youtube-dl --extract-audio --audio-format mp3 "$@"
+	youtube-dl --extract-audio --audio-format mp3 "$@" --ignore-errors 
 }
 
 function c(){
