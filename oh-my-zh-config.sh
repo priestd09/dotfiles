@@ -27,7 +27,7 @@ alias git-discard='git clean -df; git checkout -- .'
 alias sudo='sudo '
 alias art='php artisan'
 alias laravel5='composer create-project laravel/laravel .  dev-develop --prefer-dist'
-
+alias seedrails='rake db:seed:clear && rake db:seed'
 #sudo apt-get install youtube-dl
 function ydl()
 {
