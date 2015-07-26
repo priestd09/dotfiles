@@ -42,6 +42,11 @@ function serve(){
 	php -S localhost:"$@"
 }
 
+function lara(){
+	gulp watch & 
+	php artisan serve &
+}
+
 #dont forget to set :  git config --global push.default matching
 function gitall()
 {
