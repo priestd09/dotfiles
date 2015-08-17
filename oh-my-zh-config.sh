@@ -54,7 +54,12 @@ function gitall()
 	git commit -m "$@"
 	git push
 }
-
+#add .gitignore after project
+function addignore(){
+	git rm -r --cached .
+	git add .
+	git commit -m ".gitignore is now working"
+}
 function mkd() {
 	mkdir -p "$@" && cd "$@"
 }
