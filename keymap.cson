@@ -33,3 +33,8 @@
 'atom-workspace':
   'ctrl-shift-g': 'wrap-in-tag:wrap'
   'alt-1':'tree-view:toggle'
+  
+'.platform-win32 .editor, .platform-linux .editor':
+  'ctrl-shift-L': 'editor:split-selections-into-lines'
+  'ctrl-shift-up': 'editor:add-selection-above'
+  'ctrl-shift-down': 'editor:add-selection-below'
